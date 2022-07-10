@@ -1,0 +1,54 @@
+# SGI-styled GRUB theme
+
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#aaaaaa"
+terminal-font: "Unifont Regular 16"
+terminal-box: "terminal_box_*.png"
+
++ boot_menu {
+  left = 15%-10
+  top = 15%
+  width = 70%+20
+  height = 70%
+  item_font = "Times New Roman Bold 20"
+  item_color = "#222222"
+  selected_item_color = "#666666"
+  item_icon_space = 15
+  item_spacing = 8
+  icon_width = 50
+  item_height = 50
+  icon_height = 50
+  menu_pixmap_style = "menu_*.png"
+  scrollbar = true
+  scrollbar_width = 20
+  scrollbar_thumb = "scrollbar_thumb_*.png"
+  scrollbar_frame = "scrollbar_frame_*.png"
+  
+}
+
++ progress_bar {
+	id = "__timeout__"
+	left = 15%
+	top = 90%
+	height = 20
+	width = 70%
+	font = "Unifont Regular 16"
+	text_color = "#000"
+	fg_color = "#fff"
+	bg_color = "#6ac"
+	border_color = "#000"
+	text = "@TIMEOUT_NOTIFICATION_LONG@"
+	bar_style = "progress_frame_*.png"
+	highlight_style = "progress_hl_*.png"
+}
+
+# ---- 1080p and higher res ONLY ----
+
+#+ image {
+#	file = "grub2_logo.png"
+#	top = 86%-172
+#	left = 85%-1059
+#	width = 1059
+#	height = 172
+#}
